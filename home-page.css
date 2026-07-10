@@ -618,3 +618,7 @@ body{
     bottom: 80px;
     left: 0px;
 }
+
+.control-icon{
+    cursor: pointer;
+}

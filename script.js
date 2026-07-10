@@ -365,6 +365,7 @@ muteBtn.addEventListener('click',()=>{
     if(!isMuted){
         lastVolume=myAudio.volume;
         myAudio.volume=0;
+        volumeSlider.value=0;
         isMuted=true;
 
         muteBtn.style.opacity="0.5";
