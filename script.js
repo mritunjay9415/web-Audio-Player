@@ -35,170 +35,170 @@ let songs=[
     {
         // 0
     songName:"dil chahta hai",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/Dil Chahta Hai [Full Song] Dil Chahta Hai.mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/dil-chahta-hai.jpg"
+    filepath:"./songs-mp3/Dil Chahta Hai [Full Song] Dil Chahta Hai.mp3",
+    coverpath:"./songs/dil-chahta-hai.jpg"
     },
     {
         // 1
     songName:"tere hawale",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/Tere Hawaale (Full Video) Laal Singh Chaddha  Aamir,Kareena  Arijit,Shilpa  Pritam,Amitabh,Advait.mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/Tere-Hawale.png"
+    filepath:"./songs-mp3/Tere Hawaale (Full Video) Laal Singh Chaddha  Aamir,Kareena  Arijit,Shilpa  Pritam,Amitabh,Advait.mp3",
+    coverpath:"./songs/Tere-Hawale.png"
     },
     {
         // 2
     songName:"wo ladki hai kahan",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/Wo Ladki Hai Kahan - Trending Version (Lyrics)  Dil Chahta Hai  Saif Ali Khan, Sonali Kulkarni.mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/Vo-Ladki-Hai-Kahan.png"
+    filepath:"./songs-mp3/Wo Ladki Hai Kahan - Trending Version (Lyrics)  Dil Chahta Hai  Saif Ali Khan, Sonali Kulkarni.mp3",
+    coverpath:"./songs/Vo-Ladki-Hai-Kahan.png"
     },
     {
         // 3
     songName:"lut le gaya",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/Dhurandhar  Lutt Le Gaya - Lyrical  Ranveer Singh, Akshaye Khanna, Shashwat Sachdev, Simran C.mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/Lut-Le-Gaya.png"
+    filepath:"./songs-mp3/Dhurandhar  Lutt Le Gaya - Lyrical  Ranveer Singh, Akshaye Khanna, Shashwat Sachdev, Simran C.mp3",
+    coverpath:"./songs/Lut-Le-Gaya.png"
     },
     {
         // 4
     songName:"vaari jawan",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/VAARI JAAVAN (Full Video) Dhurandhar The Revenge Ranveer Singh Shashwat Sachdev,Jyoti N,Jasmine S.mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/Vaari-Jawan.png"
+    filepath:"./songs-mp3/VAARI JAAVAN (Full Video) Dhurandhar The Revenge Ranveer Singh Shashwat Sachdev,Jyoti N,Jasmine S.mp3",
+    coverpath:"./songs/Vaari-Jawan.png"
     },
     {
         // 5
     songName:"ishq jalakar",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/ishq-jalakar.mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/Ishq-Jalakar.png"
+    filepath:"./songs-mp3/ishq-jalakar.mp3",
+    coverpath:"./songs/Ishq-Jalakar.png"
     },
     {
         // 6
     songName:"udd jaa kaale kaava",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/udja kale kauwan .mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/Udd-Jaa-Kaale-Kaava.png"
+    filepath:"./songs-mp3/udja kale kauwan .mp3",
+    coverpath:"./songs/Udd-Jaa-Kaale-Kaava.png"
     },
     {
         // 7
     songName:"jitni dafa",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/jitni dafa.mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/Jitni-Dafa.png"
+    filepath:"./songs-mp3/jitni dafa.mp3",
+    coverpath:"./songs/Jitni-Dafa.png"
     },
     {
         // 8
     songName:"gehra hua",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/Gehra-hua.mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/Gehra-Hua.png"
+    filepath:"./songs-mp3/Gehra-hua.mp3",
+    coverpath:"./songs/Gehra-Hua.png"
     },
     {
         // 9
     songName:"tu jo mila",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/Tu-Jo-MIla.mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/Tu-Jo-Mila.png"
+    filepath:"./songs-mp3/Tu-Jo-MIla.mp3",
+    coverpath:"./songs/Tu-Jo-Mila.png"
     },
     {
         // 10
     songName:"aari aari",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/Aari-Aari.mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/Aari-Aari.png"
+    filepath:"./songs-mp3/Aari-Aari.mp3",
+    coverpath:"./songs/Aari-Aari.png"
     },
     {
         // 11
     songName:"not guilty",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/Not-Guilty.mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/Not-Guilty.png"
+    filepath:"./songs-mp3/Not-Guilty.mp3",
+    coverpath:"./songs/Not-Guilty.png"
     },
     {
         // 12
     songName:"jhol",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/Jhol.mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/Jhol.png"
+    filepath:"./songs-mp3/Jhol.mp3",
+    coverpath:"./songs/Jhol.png"
     },
     {
         // 13
     songName:"sapna jahan",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/sapna-jahan.mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/Sapna-Jahan.png"
+    filepath:"./songs-mp3/sapna-jahan.mp3",
+    coverpath:"./songs/Sapna-Jahan.png"
     },
     {
         // 14
     songName:"tu kisi rail si",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/Rail Si -Masan.mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/Masan.png"
+    filepath:"./songs-mp3/Rail Si -Masan.mp3",
+    coverpath:"./songs/Masan.png"
     },
     {
         // 15
     songName:"baareshein",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/Baareshein.mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/Baarishein.png"
+    filepath:"./songs-mp3/Baareshein.mp3",
+    coverpath:"./songs/Baarishein.png"
     },
     {
         // 16
     songName:"ishqa ve",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/Ishqa-Ve.mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/Ishqa-Ve.png"
+    filepath:"./songs-mp3/Ishqa-Ve.mp3",
+    coverpath:"./songs/Ishqa-Ve.png"
     },
     {
         // 17
     songName:"nit khair",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/Nit-Khair.mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/Nit-Khair.png"
+    filepath:"./songs-mp3/Nit-Khair.mp3",
+    coverpath:"./songs/Nit-Khair.png"
     },
     {
         // 18
     songName:"jhoom",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/jhoom.mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/Jhoom.png"
+    filepath:"./songs-mp3/jhoom.mp3",
+    coverpath:"./songs/Jhoom.png"
     },
     {
         // 19
     songName:"mere nishan",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/Mere Nishan.mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/Mere-Nishan.png"
+    filepath:"./songs-mp3/Mere Nishan.mp3",
+    coverpath:"./songs/Mere-Nishan.png"
     },
     {
         // 20
     songName:"alag aasmaan",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/Anuv Jain - ALAG AASMAAN (a song on the ukulele).mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/Alag-Aasmaan.png"
+    filepath:"./songs-mp3/Anuv Jain - ALAG AASMAAN (a song on the ukulele).mp3",
+    coverpath:"./songs/Alag-Aasmaan.png"
     },
     {
         //21
     songName:"rootha kyun",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/Rootha Kyun Full Song  1920 LONDON  Sharman Joshi, Meera Chopra  Shaarib, Toshi  Mohit Chauhan.mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/Rootha-Kyun.png"
+    filepath:"./songs-mp3/Rootha Kyun Full Song  1920 LONDON  Sharman Joshi, Meera Chopra  Shaarib, Toshi  Mohit Chauhan.mp3",
+    coverpath:"./songs/Rootha-Kyun.png"
     },
     {
         //22
     songName:"arz kiya hai",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/Anuv Jain X Lost Stories - Arz Kiya Hai (Official Video)  Coke Studio Bharat.mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/Arz-Kiya-Hai.png"
+    filepath:"./songs-mp3/Anuv Jain X Lost Stories - Arz Kiya Hai (Official Video)  Coke Studio Bharat.mp3",
+    coverpath:"./songs/Arz-Kiya-Hai.png"
     },
     {
         //23
     songName:"maand",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/Bayaan, Hasan Raheem, Rovalio - Maand (Lyrics).mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/Maand.jpg"
+    filepath:"./songs-mp3/Bayaan, Hasan Raheem, Rovalio - Maand (Lyrics).mp3",
+    coverpath:"./songs/Maand.jpg"
     },
     {
         //24
     songName:"by my side",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/AP Dhillon & Shinda Kahlon - By My Side (Official Audio).mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/By-My-Side.png"
+    filepath:"./songs-mp3/AP Dhillon & Shinda Kahlon - By My Side (Official Audio).mp3",
+    coverpath:"./songs/By-My-Side.png"
     },
     {
         //25
     songName:"chal tere ishq mein",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/Chal Tere Ishq Mein (Female)- Gadar 2 _Utkarsh Sharma,Simratt Kaur _Vishal M,Mithoon,Neeti,Sayeed (1).mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/Chal-Tere-Ishq-Me.png"
+    filepath:"./songs-mp3/Chal Tere Ishq Mein (Female)- Gadar 2 _Utkarsh Sharma,Simratt Kaur _Vishal M,Mithoon,Neeti,Sayeed (1).mp3",
+    coverpath:"./songs/Chal-Tere-Ishq-Me.png"
     },
     {
         //26
     songName:"jale2",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/Jale 2 (Official Video) _ Sapna Choudhary,Aman Jaji,Sahil Sandhu _ Shiva _ New Haryanvi Song 2023.mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/Jale2.png"
+    filepath:"./songs-mp3/Jale 2 (Official Video) _ Sapna Choudhary,Aman Jaji,Sahil Sandhu _ Shiva _ New Haryanvi Song 2023.mp3",
+    coverpath:"./songs/Jale2.png"
     },
     {
         //27
     songName:"hue bechain",
-    filepath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs-mp3/Hue Bechain _ Ek Haseena Thi Ek Deewana Tha _ Music - Nadeem, Palak Muchhal _ Yasser Desai.mp3",
-    coverpath:"C:/Users/mritu/Desktop/Web-Dev/spotify-clone/songs/Hue-Bechain.png"
+    filepath:"./songs-mp3/Hue Bechain _ Ek Haseena Thi Ek Deewana Tha _ Music - Nadeem, Palak Muchhal _ Yasser Desai.mp3",
+    coverpath:"./songs/Hue-Bechain.png"
     },
 ];
 
