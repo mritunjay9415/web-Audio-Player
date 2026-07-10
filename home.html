@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home-page.css">
+</head>
+<body>
+    <div id="navbar">
+        <img id="logo" src="C:\Users\mritu\Desktop\Web-Dev\spotify-clone\songs\spotify-logo.webp" height="30px">
+        <a id="home" href="home.html"><img src="https://i.pinimg.com/736x/4a/24/14/4a2414e8d912d269ddb8a55b3de2c00b.jpg" height="30px"></a>
+        <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input id="searchBar" type="text" placeholder="what do you want to play?" spellcheck="false">
+            <div id="searchStatus" style="display: none; color:#fa5858; font-size: 14px; margin-top: 5px; text-align: left;"></div>
+        </div>
+        
+        <div class="right-section">
+            <button id="premium-button" href="prem.html">Explore Premium</button>
+            <button class="icon-button" aria-label="What's New">
+                <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                    <path d="M8 1.5a4 4 0 0 0-4 4v3.27a.75.75 0 0 1-.1.373L2.255 12h11.49L12.1 9.142a.75.75 0 0 1-.1-.374V5.5a4 4 0 0 0-4-4zm-5.5 4a5.5 5.5 0 0 1 11 0v3.067l2.193 3.809a.75.75 0 0 1-.65 1.124H10.5a2.5 2.5 0 0 1-5 0H1.457a.75.75 0 0 1-.65-1.124L3 8.569V5.5zm4.5 8a1 1 0 1 0 2 0H7z"></path>
+                </svg>
+            </button>
+            <!-- Profile Icon Button -->
+            <button class="icon-button" aria-label="User Profile" onclick="toggleMenu()">
+                <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                </svg>
+            </button>
+            <div class="profile-dropdown" id="profileMenu">
+                <ul class="dropdown-links">
+                    <li><a href="#">Account<span class="icon">↗</span></a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="#">Recents</a></li>
+                    <li><a href="#">Upgrade to Premium<span class="icon">↗</span></a></li>
+                    <li><a href="#">Support<span class="icon">↗</span></a></li>
+                    <li><a href="#">Download<span class="icon">↗</span></a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li class="logout-link"><a href="#">Log Out</a></li>
+                </ul>
+        
+                <div class="updates-section">
+                    <h3>Your Updates</h3>
+                    <div class="updates-msg">
+                        <span class="tick-mark">✓</span>
+                        <h4>You're all caught up</h4>
+                        <p>Watch this space for news on your followers,playlists,events and more.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="player-bar">
+        <!-- left section -->
+        <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+            <path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"></path>
+            <path d="M11.75 8a.75.75 0 0 1-.75.75H8.75V11a.75.75 0 0 1-1.5 0V8.75H4.5a.75.75 0 0 1 0-1.5h2.75V4.5a.75.75 0 0 1 1.5 0v2.75h2.75a.75.75 0 0 1 .75.75z"></path>
+        </svg>
+        <div class="playing-info">
+            <img id="masterCover" src="C:\Users\mritu\Desktop\Web-Dev\spotify-clone\songs\Tere-Hawale.png" alt="Album Cover">
+            <div class="track-details">
+                <span class="track-name"> Tere-Hawale..</span>
+                <span class="artist-name">Arijit-singh..</span>
+            </div>
+            <button class="add-button">+</button>
+        </div>
+        <!-- center section -->
+        <div class="player-controls">
+            <div class="control-buttons">
+                <!-- svg code for controls -->
+                <!-- shuffle -->
+                <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                    <path d="M13.151.922a.75.75 0 1 0-1.06 1.06L13.109 3H11.16a3.75 3.75 0 0 0-2.873 1.34l-6.173 7.356A2.25 2.25 0 0 1 .39 12.5H0V14h.391a3.75 3.75 0 0 0 2.873-1.34l6.173-7.356a2.25 2.25 0 0 1 1.724-.804h1.947l-1.017 1.018a.75.75 0 0 0 1.06 1.06L15.98 2.75 13.151.922zM.391 3.5H0V2h.391c1.109 0 2.16.59 2.757 1.571l.205.337-1.127 1.343-.2-.328A2.25 2.25 0 0 0 .39 3.5zM8.75 9.176a.75.75 0 1 0-1.144-.964l-2.005 2.387-.2.327A2.25 2.25 0 0 1 3.144 12.5H0V14h3.144c1.109 0 2.16-.59 2.757-1.571l.205-.337 2.644-3.147z"></path>
+                </svg>
+                <!-- previous -->
+                <svg id="prevBtn" onclick="togglePrev()" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" >
+                    <path d="M3.3 1a.7.7 0 0 1 .7.7v5.15l9.95-5.744a.7.7 0 0 1 1.05.606v12.575a.7.7 0 0 1-1.05.607L4 9.149V14.3a.7.7 0 0 1-.7.7H1.7a.7.7 0 0 1-.7-.7V1.7a.7.7 0 0 1 .7-.7h1.6z"></path>
+                </svg>
+                <div id="playBtnWrapper" onclick="togglePlay()" style="cursor: pointer;">
+    
+                <!-- 1. Play Icon (Shuru me ye dikhega) -->
+                <svg id="playIcon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                    <path d="M3 1.713a.7.7 0 0 1 1.05-.607l10.89 6.288a.7.7 0 0 1 0 1.212L4.05 14.894A.7.7 0 0 1 3 14.288V1.713z"></path>
+                </svg>
+
+                <!-- 2. Pause Icon (Shuru me ye chupa rahega -> display: none) -->
+                <svg id="pauseIcon" style="display: none;" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                    <path d="M2.7 1a.7.7 0 0 0-.7.7v12.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7H2.7zm8 0a.7.7 0 0 0-.7.7v12.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7h-2.6z"></path>
+                </svg>
+                </div>
+                <!-- Next -->
+                <svg id="nextBtn" onclick="toggleNext()" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                    <path d="M12.7 1a.7.7 0 0 0-.7.7v5.15L2.05 1.107A.7.7 0 0 0 1 1.712v12.575a.7.7 0 0 0 1.05.607L12 9.149V14.3a.7.7 0 0 0 .7.7h1.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7h-1.6z"></path>
+                </svg>
+                <!-- Repeat -->
+                <svg id="loopBtn" onclick="toggleLoop()" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                    <path d="M0 4.75A3.75 3.75 0 0 1 3.75 1h8.5A3.75 3.75 0 0 1 16 4.75v5a3.75 3.75 0 0 1-3.75 3.75H9.81l1.018 1.018a.75.75 0 1 1-1.06 1.06L6.939 12.75l2.829-2.828a.75.75 0 1 1 1.06 1.06L9.811 12h2.439a2.25 2.25 0 0 0 2.25-2.25v-5a2.25 2.25 0 0 0-2.25-2.25h-8.5A2.25 2.25 0 0 0 1.5 4.75v5A2.25 2.25 0 0 0 3.75 12H5v1.5H3.75A3.75 3.75 0 0 1 0 9.75v-5z"></path>
+                </svg>
+            </div>  
+            <div class="playback-bar">
+                <span id="currentTime" class="time-current">0:00</span>
+                <input id="progressBar" type="range" class="progress-slider" min="0" max="100" value="0">
+                <canvas id="waveVisualizer"></canvas>
+                <span id="totalTime" class="time-total">0:00</span>
+            </div>
+        </div>
+        <!-- right section -->
+        <div class="extra-controls">
+            <!-- svg code -->
+             <!-- Lyrics -->
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                <path d="M7 1.559a2.441 2.441 0 0 1 2.441 2.441v4a2.441 2.441 0 0 1-4.882 0v-4A2.441 2.441 0 0 1 7 1.559zM3.559 4A3.441 3.441 0 0 1 7 .559 3.441 3.441 0 0 1 10.441 4v4A3.441 3.441 0 0 1 7 11.441 3.441 3.441 0 0 1 3.559 8V4z"></path>
+                <path d="M12.91 7.426a.75.75 0 0 1 .75.75v.824a6.66 6.66 0 0 1-5.91 6.613V17.5h2.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5h2.5v-1.887a6.66 6.66 0 0 1-5.91-6.613v-.824a.75.75 0 1 1 1.5 0v.824a5.16 5.16 0 0 0 10.32 0v-.824a.75.75 0 0 1 .75-.75z"></path>
+            </svg>
+            <!-- queue -->
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                <path d="M15 15H1v-1.5h14V15zm0-4.5H1V9h14v1.5zm-14-7A2.5 2.5 0 0 1 3.5 1h9a2.5 2.5 0 0 1 0 5h-9A2.5 2.5 0 0 1 1 3.5zm2.5-1a1 1 0 0 0 0 2h9a1 1 0 1 0 0-2h-9z"></path>
+            </svg>
+            <!-- volume speaker -->
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                <path d="M9.741.85a.75.75 0 0 1 .375.65v13a.75.75 0 0 1-1.125.65l-6.925-4a3.642 3.642 0 0 1-1.33-4.967 3.639 3.639 0 0 1 1.33-1.332l6.925-4a.75.75 0 0 1 .75 0zm-6.924 5.3a2.139 2.139 0 0 0 0 3.7l5.8 3.35V2.8l-5.8 3.35zm8.683 4.29V5.56a2.75 2.75 0 0 1 0 4.88z"></path>
+            </svg>
+            <input type="range" id="volumeSlider" class="volume-slider" min="0" max="100" value="50">
+        </div>
+        <!-- audio button -->
+        <audio id="masterAudio">
+            <source src="C:\Users\mritu\Desktop\Web-Dev\spotify-clone\songs-mp3\Tere Hawaale (Full Video) Laal Singh Chaddha  Aamir,Kareena  Arijit,Shilpa  Pritam,Amitabh,Advait.mp3" type="audio/mpeg"> 
+        </audio>
+
+        <button id="masterPlayBtn" onclick="togglePlay()">Play</button>
+    </footer>
+
+    <main class="main-content">
+        <div class="top-pills">
+            <button class="pill active">All</button>
+            <button class="pill">Music</button>
+            <button class="pill">Podcasts</button>
+        </div>
+
+        <div class="bars">
+            <div class="liked-songs">
+                <img src="C:\Users\mritu\Desktop\Web-Dev\spotify-clone\songs\Liked-Songs.png" alt="liked songs">
+                <span>Liked Songs</span>
+            </div>
+            <div class="song1" onclick="playSongFromCard(0)" style="cursor: pointer;">
+                <img src="C:\Users\mritu\Desktop\Web-Dev\spotify-clone\songs\dil-chahta-hai.jpg" alt="Dil Chahta Hai">
+                <span>Dil Chahta Hai</span>
+            </div>
+            <div class="song2" onclick="playSongFromCard(23)" style="cursor: pointer;">
+                <img src="C:\Users\mritu\Desktop\Web-Dev\spotify-clone\songs\Maand.jpg" alt="Maand">
+                <span>Maand</span>
+            </div>
+            <div class="song3" onclick="playSongFromCard(22)" style="cursor: pointer;">
+                <img src="C:\Users\mritu\Desktop\Web-Dev\spotify-clone\songs\Arz-Kiya-Hai.png" alt="Arz Kiya Hai">
+                <span>Arz Kiya Hai</span>
+            </div>
+            <div class="song4" onclick="playSongFromCard(21)" style="cursor: pointer;">
+                <img src="C:\Users\mritu\Desktop\Web-Dev\spotify-clone\songs\Rootha-Kyun.png" alt="Rootha Kyun">
+                <span>Rootha Kyun</span>
+            </div>
+            <div class="song5" onclick="playSongFromCard(20)" style="cursor: pointer;">
+                <img src="C:\Users\mritu\Desktop\Web-Dev\spotify-clone\songs\Alag-Aasmaan.png" alt="Alag Aasmaan">
+                <span>Alag Aasmaan</span>
+            </div>
+            <div class="song6" onclick="playSongFromCard(19)" style="cursor: pointer;">
+                <img src="C:\Users\mritu\Desktop\Web-Dev\spotify-clone\songs\Mere-Nishan.png" alt="Mere Nishan">
+                <span>Mere Nishan</span>
+            </div>
+            <div class="song7" onclick="playSongFromCard(1)" style="cursor: pointer;">
+                <img src="C:\Users\mritu\Desktop\Web-Dev\spotify-clone\songs\Tere-Hawale.png" alt="Tere Hawale">
+                <span>Tere Hawale</span>
+            </div>
+
+        </div>
+
+        <div class="album-grid">
+            <div class="song-card"
+                 style="background-image: url(songs/dil-chahta-hai.jpg);"
+                 data-song=""
+                 data-name="Dil Chahta Hai"
+                 style="cursor: pointer;"
+                 onclick="playSongFromCard(0)">
+            </div>
+            <div class="song-card"
+                 style="background-image: url(songs/Sapna-Jahan.png);"
+                 data-song=""
+                 data-name="Spana Jahan"
+                 style="cursor:pointer;"
+                 onclick="playSongFromCard(13)">
+            </div>
+            <div class="song-card"
+                 style="background-image: url(songs/Nit-Khair.png);"
+                 data-song=""
+                 data-name="Nit Khair"
+                 style="cursor:pointer;"
+                 onclick="playSongFromCard(17)">
+            </div>
+            <div class="song-card"
+                 style="background-image: url(songs/Jitni-Dafa.png);"
+                 data-song=""
+                 data-name="Jitni Dafa"
+                 style]="cursor:pointer;"
+                 onclick="playSongFromCard(7)">
+            </div>
+            <div class="song-card"
+                 style="background-image: url(songs/Jhol.png);"
+                 data-song=""
+                 data-name="Jhol"
+                 style="cursor:pointer;"
+                 onclick="playSongFromCard(12)">
+            </div>
+            <div class="song-card"
+                 style="background-image: url(songs/By-My-Side.png);"
+                 data-song=""
+                 data-name="By My Side"
+                 style="cursor:pointer;"
+                 onclick="playSongFromCard(24)">
+            </div>
+            <div class="song-card"
+                 style="background-image: url(songs/Not-Guilty.png);"
+                 data-song=""
+                 data-name="Not Guilty"
+                 style="cursor:pointer;"
+                 onclick="playSongFromCard(11)">
+            </div>
+            <div class="song-card"
+                 style="background-image: url(songs/Jale2.png);"
+                 data-song=""
+                 data-name="Jale 2"
+                 style="cursor: pointer;"
+                 onclick="playSongFromCard(26)">
+            </div>
+            <div class="song-card"
+                 style="background-image: url(songs/Ishqa-Ve.png);"
+                 data-song=""
+                 data-name="Ishqa Ve"
+                 style="cursor:pointer;"
+                 onclick="playSongFromCard(16)">
+            </div>
+            <div class="song-card"
+                 style="background-image: url(songs/Hue-Bechain.png);"
+                 data-song=""
+                 data-name="Hue Bechain"
+                 style="cursor: pointer;"
+                 onclick="playSongFromCard(27)">
+            </div>
+            <div class="song-card"
+                 style="background-image: url(songs/Tu-Jo-Mila.png);"
+                 data-song=""
+                 data-name="Tu Jo Mila"
+                 style="cursor: pointer;"
+                 onclick="playSongFromCard(9)">
+            </div>
+            <div class="song-card"
+                 style="background-image: url(songs/Vo-Ladki-Hai-Kahan.png);"
+                 data-song=""
+                 data-name="Vo Ladki Hai Kahan"
+                 style="cursor: pointer;"
+                 onclick="playSongFromCard(2)">
+            </div>
+            <div class="song-card"
+                 style="background-image: url(songs/Chal-Tere-Ishq-Me.png);"
+                 data-song=""
+                 data-name="Chal Tere Ishq Mein"
+                 style="cursor: pointer;"
+                 onclick="playSongFromCard(25)">
+            </div>
+            <div class="song-card"
+                 style="background-image: url(songs/Baarishein.png);"
+                 data-song=""
+                 data-name="Baarishein"
+                 style="cursor:pointer;"
+                 onclick="playSongFromCard(15)">
+            </div>
+            <div class="song-card"
+                 style="background-image: url(songs/Tuu-Kisi-Rail-Si.png);"
+                 data-song=""
+                 data-name="Tu Kisi Rail Si"
+                 style="cursor: pointer;"
+                 onclick="playSongFromCard(14)">
+            </div>
+            <div class="song-card"
+                 style="background-image: url(songs/Ishq-Jalakar.png);"
+                 data-song=""
+                 data-name="Ishq Jalakar"
+                 style="cursor: pointer;"
+                 onclick="playSongFromCard(5)">
+            </div>
+            <div class="song-card"
+                 style="background-image: url(songs/Gehra-Hua.png);"
+                 data-song=""
+                 data-name="Gehra Hua"
+                 style="cursor: pointer;"
+                 onclick="playSongFromCard(8)">
+            </div>
+            <div class="song-card"
+                 style="background-image: url(songs/Aari-Aari.png);"
+                 data-song=""
+                 data-name="Aari Aari"
+                 style="cursor: pointer;"
+                 onclick="playSongFromCard(10)">
+            </div>
+        </div>
+
+        <div class="video-card-container">
+            <div class="video-card">
+                <video class="bg-video" autoplay loop muted playsinline>
+                    <source src="videos/Arijit-Singh.mp4" type="video/mp4">
+                </video>
+
+                <div class="album-details">
+                    <img src="songs/Arijit.png" alt="Album Cover" class="small-cover">
+                    <div class="info-text">
+                        <h4>Song</h4>
+                        <p>Album &bull; Arijit singh</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <video class="bg-video" autoplay loop muted playsinline>
+                    <source src="videos/Raj-Shamani.mp4" type="video/mp4">
+                </video>
+
+                <div class="album-details">
+                    <img src="songs/Raj-Samaani.png" alt="Album Cover" class="small-cover">
+                    <div class="info-text">
+                        <h4>Song</h4>
+                        <p>Podcast &bull; Raj Samaani</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <video class="bg-video" autoplay loop muted playsinline>
+                    <source src="videos/Rehman-Dacoit.mp4" type="video/mp4">
+                </video>
+
+                <div class="album-details">
+                    <img src="songs/Dhurandhar.png" alt="Album Cover" class="small-cover">
+                    <div class="info-text">
+                        <h4>Song</h4>
+                        <p>Dhurandhar &bull; Rehman Dacoit</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <video class="bg-video last-card" autoplay loop muted playsinline>
+                    <source src="videos/KGF-Chapter2.mp4" type="video/mp4">
+                </video>
+
+                <div class="album-details">
+                    <img src="songs/KGF2.png" alt="Album Cover" class="small-cover">
+                    <div class="info-text">
+                        <h4>Song</h4>
+                        <p>KGF2 &bull; Rocky Bhai</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="app-footer">
+            <div class="footer-top">
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">For the Record</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Communities</h4>
+                    <ul>
+                        <li><a href="#">For Artists</a></li>
+                        <li><a href="#">Developers</a></li>
+                        <li><a href="#">Advertising</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Vendors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Free Mobile App</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Plans</h4>
+                    <ul>
+                        <li><a href="#">Premium Standard</a></li>
+                        <li><a href="#">Free Plans</a></li>
+                    </ul>
+                </div>
+                <div class="social-icons">
+                    <div class="icon-circle">Insta</div>
+                    <div class="icon-circle">X</div>
+                    <div class="icon-circle">FB</div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <ul class="legal-links">
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Safety & Privacy Center</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+                <span class="copyright">© 2026  AB</span>
+            </div>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
