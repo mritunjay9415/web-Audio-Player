@@ -376,3 +376,27 @@ muteBtn.addEventListener('click',()=>{
         muteBtn.style.opacity="1";
     }
 });
+
+// queue and lyrics function
+
+const micBtn=document.getElementById("micBtn");
+const queueBtn=document.getElementById("queueBtn");
+const lyricsPanel=document.getElementById("lyricsPanel");
+const queuePanel=document.getElementById("queuePanel");
+
+micBtn.addEventListener("click",()=>{
+    lyricsPanel.classList.toggle("show");
+    queuePanel.classList.remove("show");
+
+    micBtn.classList.toggle("active-btn");
+    queueBtn.classList.remove("active-btn");
+});
+
+queueBtn.addEventListener("click",()=>{
+    queuePanel.classList.toggle("show");
+    lyricsPanel.classList.remove("show");
+
+    micBtn.classList.remove("active-btn");
+    queueBtn.classList.toggle("active-btn");
+});
+
