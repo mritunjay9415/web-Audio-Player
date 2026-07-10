@@ -384,7 +384,7 @@ const queueBtn=document.getElementById("queueBtn");
 const lyricsPanel=document.getElementById("lyricsPanel");
 const queuePanel=document.getElementById("queuePanel");
 
-micBtn.addEventListener("click",()=>{
+micBtn.addEventListener('click',()=>{
     lyricsPanel.classList.toggle("show");
     queuePanel.classList.remove("show");
 
@@ -392,7 +392,7 @@ micBtn.addEventListener("click",()=>{
     queueBtn.classList.remove("active-btn");
 });
 
-queueBtn.addEventListener("click",()=>{
+queueBtn.addEventListener('click',()=>{
     queuePanel.classList.toggle("show");
     lyricsPanel.classList.remove("show");
 
