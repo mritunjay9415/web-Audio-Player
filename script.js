@@ -353,3 +353,27 @@ searchBar.addEventListener('keydown',(e)=>{
 });
 }
 
+// speaker mute button
+
+let muteBtn=document.getElementById("muteBtn");
+let volumeSlider=document.getElementById("volumeSlider");
+
+let lastVolume=1;
+let isMuted=false;
+
+muteBtn.addEventListener('click',()=>{
+    if(!isMuted){
+        lastVolume=myAudio.volume;
+        myAudio.volume=0;
+        isMuted=true;
+
+        muteBtn.style.opacity="0.5";
+    }
+    else{
+        myAudio.volume=lastVolume;
+        volumeSlider.value=lastVolume*100;
+        isMuted=false;
+
+        muteBtn.style.opacity="1";
+    }
+});
