@@ -356,7 +356,6 @@ searchBar.addEventListener('keydown',(e)=>{
 // speaker mute button
 
 let muteBtn=document.getElementById("muteBtn");
-let volumeSlider=document.getElementById("volumeSlider");
 
 let lastVolume=1;
 let isMuted=false;
