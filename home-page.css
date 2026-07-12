@@ -663,3 +663,8 @@ body{
     transition: 0.2s ease ;
 }
 
+#lyricsContent{
+    white-space: pre-line;
+    line-height: 1.6;
+    margin-top:20px;
+}

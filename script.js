@@ -192,7 +192,46 @@ let songs=[
         //26
     songName:"jale2",
     filepath:"./songs-mp3/Jale 2 (Official Video) _ Sapna Choudhary,Aman Jaji,Sahil Sandhu _ Shiva _ New Haryanvi Song 2023.mp3",
-    coverpath:"./songs/Jale2.png"
+    coverpath:"./songs/Jale2.png",
+
+    lyrics:`Main tanne su pyari, tu pyaara mera
+    Main teri giri, tu chhuara mera
+    Main tanne su pyari, tu pyaara mera
+    Main teri giri, tu chhuara mera
+
+    Jee to mera issa kare
+    Haye janu kache ne khaa lyu tane
+
+    Haye re tu chhati ke laage rahiye
+    Tabeej bana lyu tane
+    Haan chhati ke laage rahiye
+    Tabeej bana lyu tane
+
+    Main kaangne mein haari thi pehlya piya
+    Jitungi jaroor pyaar aale khel mein
+    Ho tu bhi andy lagge chhail mere sang mein
+    Main bhi laagu gacch, sun tere gail me
+
+    Ho banake kajal jale
+    Aakhya mein sajaa lyu tane
+
+    Haye re tu chhati ke laage rahiye
+    Tabeej bana lyu tane
+    Haan chhati ke laage rahiye
+    Tabeej bana lyu tane
+
+    Bohta ke kaaljya mein laage aag si
+    Ya teri meri jodi unique se kati
+    2 jism, ek jaan se hum dono re
+    Manne teri baat piya theek se kati
+
+    Mukesh jaji mere balma
+    Aaja gal te main laa lyu tane
+
+    Haye re tu chhati ke laage rahiye
+    Tabeej bana lyu tane
+    Haan chhati ke laage rahiye
+    Tabeej bana lyu tane`,
     },
     {
         //27
@@ -217,6 +256,8 @@ function toggleNext(){
     masterCover.src=songs[songIndex].coverpath;
     myAudio.play();
 
+    updateLyricsDisplay();
+    
     playIcon.style.display="none";
     pauseIcon.style.display="block";
 }
@@ -399,4 +440,19 @@ queueBtn.addEventListener("click",()=>{
     micBtn.classList.remove("active-btn");
     queueBtn.classList.toggle("active-btn");
 });
+
+// function for lyrics 
+const lyricsContent=document.getElementById("lyricsContent");
+
+function updateLyricsDisplay(){
+    let currentSongLyrics=songs[songIndex].lyrics;
+
+    if(currentSongLyrics){
+        lyricsContent.innerText=currentSongLyrics;
+    }
+    else{
+        lyricsContent.innerText="Is gaane ke lyrics abhi add nhi hue hai!🎶";
+    }
+}
+
 
