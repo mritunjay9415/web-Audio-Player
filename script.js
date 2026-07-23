@@ -1566,6 +1566,10 @@ Humne Raaz Ye Jana…`
     },
 ];
 
+// queue array 
+let customQueue=[];
+
+
 // fetching HTML button to js
 
 let loopBtn=document.getElementById("loopBtn");
@@ -1575,13 +1579,19 @@ let masterCover=document.getElementById("masterCover");
 // Next button logic
 
 function toggleNext(){
-    songIndex=(songIndex+1)%songs.length;
+    if(customQueue.length>0){
+        songIndex=customQueue.shift();
+    }
+    else{
+        songIndex=(songIndex+1)%songs.length;
+    }
 
     myAudio.src=songs[songIndex].filepath;
     masterCover.src=songs[songIndex].coverpath;
     myAudio.play();
 
     updateLyricsDisplay();
+    updateQueueDisplay();
 
     playIcon.style.display="none";
     pauseIcon.style.display="block";
@@ -1781,4 +1791,26 @@ function updateLyricsDisplay(){
     }
 }
 
+function addToQueue(songIndex){
+    customQueue.push(songIndex);
+    updateQueueDisplay();
+}
+
+function updateQueueDisplay(){
+    let queueList=document.getElementById("queueList");
+    queueList.innerHTML="";
+
+    if(customQueue.length==0){
+        queueList.innerHTML="<p style='color:#b3b3b3;'>Queue is empty!</p>";
+        return ;
+    }
+
+    customQueue.forEach((queueItemIndex,i)=>{
+        let song=songs[queueItemIndex];
+        let li=document.createElement("li");
+        li.innerText=`${i+1}.${song.songName}`;
+
+        queueList.appendChild(li);
+    });
+}
 

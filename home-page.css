@@ -668,3 +668,15 @@ body{
     line-height: 1.6;
     margin-top:20px;
 }
+
+.add-queue-btn{
+    color:#b3b3b3;
+    cursor:pointer;
+    margin-left:15px;
+    transition: 0.3s ease;
+}
+
+.add-queue-btn:hover{
+    color:#1db954;
+    transform:scale(1.2);
+}
